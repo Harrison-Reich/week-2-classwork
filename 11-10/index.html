@@ -7,121 +7,146 @@
   <title>Document</title>
 </head>
 <body>
-
+  <h1 id="random">1</h1>
+  <!-- <div id="myDiv"></div> -->
+  <button id="myBtn">Click Me</button>
   <script>
+
     // Hoisting - Browser reads every js function written before running it, moves function to top and defines them. Considered weak developing. Correct developing below const greeting = function.
-
+    
     // greeting()
-
+    
     // function greeting() {
-    //   const message = 'Hello and Good Morning'
-    //   console.log(message)
-    // }
-
-
-    // const greeting = function (name) {
-    //   console.log(`Hello ${name} and Good Morning!`)
-    // }
-
-    // greeting('John Doe')
-    // greeting ('Jane Doe')
-
-
-      // const greeting = (person1, person2) => console.log(`Hello ${person1} and Good Morning ${person2}!`)
-      
-      // greeting('John Doe', 'Jane Doe')
-      // greeting ('Jane Doe')
-
-    // function add() {
-    //   const sum = (4)
-    //   console.log(sum)
-    // }
-    // add(2 + 2)
-
-
-    // const add = (num1, num2) => console.log(num1 + num2)
-    //   add (2, 2)
-
-    
-    // function sub() {
-    //   const subtract = (2)
-    //   console.log(subtract)
-    // }
-    // sub(4 - 2)
-
-    // const subtract = (num1, num2) => console.log(num1 - num2)
-    //   subtract (4, 2)
-
-
-    // function dividend () {
-    //   const quotient = (4)
-    //   console.log(quotient)
-    // }
-    // dividend (8 / 2)
-
-    // const divide = (num1, num2) => console.log(num1 / num2)
-    //   divide (8, 2)
-
-
-    // function multiplicand () {
-    //   const product = (16)
-    //   console.log(product)
-    // }
-    // multiplicand (4 * 4)
-
-    // const multiply = (num1, num2) => console.log(num1 * num2)
-    //   multiply (4, 4)
-
-
-
-
-    // const user = {
-    //   name: 'Harrison Reich',
-    //   age: 23,
-    //   email: 'harry@gmail.com',
-    //   posts: [
-    //     {
-    //       title: 'My First Post',
-    //       body: 'This is my first post',
-    //     }
-    //   ],
-    //   pet: {
-    //     name:'Bowser',
-    //     breed:'Shitzu'
-    //   },
-    //   greeting() {
-    //     console.log('Hello there!')
+    //     const message = 'Hello and Good Morning'
+    //     console.log(message)
     //   }
-    // }
+      
+      
+    //   const greeting = function (name) {
+    //       console.log(`Hello ${name} and Good Morning!`)
+    //     }
+        
+    //     greeting('John Doe')
+    //     greeting ('Jane Doe')
+        
+        
+    //     const greeting = (person1, person2) => console.log(`Hello ${person1} and Good Morning ${person2}!`)
+        
+    //     greeting('John Doe', 'Jane Doe')
+    //     greeting ('Jane Doe')
+        
+    //     function add() {
+    //         const sum = (4)
+    //         console.log(sum)
+    //       }
+    //       add(2 + 2)
+          
+          
+    //       const add = (num1, num2) => console.log(num1 + num2)
+    //         add (2, 2)
+          
+          
+    //       function sub() {
+    //           const subtract = (2)
+    //           console.log(subtract)
+    //         }
+    //         sub(4 - 2)
+            
+    //         const subtract = (num1, num2) => console.log(num1 - num2)
+    //           subtract (4, 2)
+            
+            
+    //         function dividend () {
+    //             const quotient = (4)
+    //             console.log(quotient)
+    //           }
+    //           dividend (8 / 2)
+              
+    //           const divide = (num1, num2) => console.log(num1 / num2)
+    //             divide (8, 2)
+              
+              
+    //           function multiplicand () {
+    //               const product = (16)
+    //               console.log(product)
+    //             }
+    //             multiplicand (4 * 4)
+                
+    //             const multiply = (num1, num2) => console.log(num1 * num2)
+    //               multiply (4, 4)
+                
+                
+                
+                
+    //   const user = {
+    //       name: 'Harrison Reich',
+    //       age: 23,
+    //       email: 'harry@gmail.com',
+    //       posts: [
+    //           {
+    //             title: 'My First Post',
+    //             body: 'This is my first post',
+    //       }
+    //     ],
+    //       pet: {
+    //         name:'Bowser',
+    //         breed:'Shitzu'
+    //     },
+    //       greeting() {
+    //       console.log('Hello there!')
+    //     }
+    //   }
+                          
+    //     console.log(user.email)
+    //     console.log(user.name)
+    //     console.log(user.pet.name)
+    //     console.log(user.posts, [1].title)
+    //     user.greeting()
+                          
+    //   const movie = {
+    //       name: 'Dune',
+    //       release: 'Fall 2021',
+    //       actors: ['Timothee Chalamet', 'Zendaya', 'Rebecca Furguson', 'Oscar Isaac', 'Stellan Skarsgard', 'Dave Bautista'],
+    //       runtime: '155-mins', 
+    //       money: {
+    //         budget: '165 million',
+    //         revenue: '331.6 million',
+    //     },
+    //       crewMembers: {
+    //         director:'Denis Villeneuve',
+    //         editor:'Joe Walker',
+    //         cinematography: 'Greg Fraiser',
+    //         music:'Hans Zimmer',
+    //         productionCompany: 'Legendary Pictures',
+    //     },
+    //       genre: {
+    //         action:'action',
+    //         drama:'drama',
+    //         adventure:'adventure',
+    //         scienceFiction: 'Sci-Fi',
+    //     },
+    //       rating: {
+    //         rottenTomatoes: '83%',
+    //         imdb: '8.2/10',
+    //         metacritic: '74%'
+    //     },
+    //       soundMixes: {
+    //         sonicsDdp: 'Sonics-DDP',
+    //         auro111: 'Auro 11.1',
+    //         dolbySurround71: 'Dolby Surround 7.1',
+    //         dolbyAtmos: 'Dolby Atmos',
+    //         imax: 'IMAX',
+    //     },
+    //       summary: `A mythic and emotionally charged hero's journey, "Dune" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people.As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential- only those who can conquer their fear will survive.—Warner Bros.`
+    //   }
+    //  console.log(movie) 
+    // console.log(document.getElementById('heading').textContent)
+    // document.getElementById('heading').textContent = 'Goodbye World'
 
-    // console.log(user.email)
-    // console.log(user.name)
-    
-    // console.log(user.pet.name)
-    // console.log(user.posts, [1].title)
-
-    // user.greeting()
-
-
-
-    const movie = {
-      name: 'Dune',
-      release: 'Fall 2021',
-      actors: ['Timothee Chalamet', 'Zendaya', 'Rebecca Furguson', 'Oscar Isaac', 'Stellan Skarsgard', 'Dave Bautista'],
-      runtime: '155-mins', 
-      money: {
-        budget: '165 million',
-        revenue: '331.6 million',
-      },
-      crewMembers: {
-        director:'Denis Villeneuve',
-        editor:'Joe Walker',
-        cinematography: 'Greg Fraiser',
-        music:'Hans Zimmer',
-        productionCompany: 'Legendary Pictures',
-      } 
-    }
-    console.log(movie)
+    document.getElementById('myBtn').addEventListener('click', () => {
+      const randNum = Math.floor(Math.() * 100)
+      document.getElementById('random').textContent = randNum
+    })
 
   </script>  
 </body>
