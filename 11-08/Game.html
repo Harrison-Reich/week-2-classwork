@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number Generator Guessing Game</title>
+</head>
+<body>
+  
+  <script>
+
+alert(`Let's play a game`)
+let input = prompt('Pick a number between 1 and 15')
+console.log(input)
+alert(`You picked ${input}`)
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  } 
+  let random = (getRandomInt(15) + 1)
+  console.log(random)
+
+  if (input == random) alert('You Won!'); else alert(`You lost. The number was ${random}. Try Again!`)
+
+
+
+      // Quintons code for random number
+// let answer = Math.floor(Math.random() * 15)
+//   console.log(answer)
+
+// let isCorrect = false
+
+// for (let i = 0; i < 5; i++)
+//   if(isCorrect ===false) {
+
+//     let guess = prompt('Pick a number between 1 & 15')
+//     // let answer = Math.floor(Math.random() * 15)
+
+//     if (parseInt(guess) == answer) {
+//       alert('You guess it!')
+//       isCorrect = true
+//     } else {
+//       if(i === 4) {
+//         alert('Wrong! Game over!')
+//         else {
+//           alert('Wrong! Try again!')
+//         }
+//       }
+//   }
+
+
+    // classmates example random number generator game
+// let input = prompt('Pick a number between 1 and 15')
+// alert('You picked ${input}')
+// console.log(input)
+
+// function getRandomInt(max) {
+//   return Math.floor(Math.random() * max);
+// }
+// let random = (getRandomInt(15))  
+// console.log(random)
+
+// if (input == random) alert('You Won!'); else alert(`Try again! The random number was ${random}`)
+  </script>
+
+</body>
+</html>
