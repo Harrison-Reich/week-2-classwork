@@ -7,10 +7,30 @@
   <title>Document</title>
 </head>
 <body>
-  <h1 id="random">1</h1>
+  <!-- <h1 id="display">0</h1> -->
   <!-- <div id="myDiv"></div> -->
-  <button id="myBtn">Click Me</button>
+  <!-- <button id="myBtn">Click Me</button> -->
+  <!-- <p>Button Clicked <span id="display">0</span></p> -->
+
+  <form>
+    <p>
+      <label for ="name">name</label>
+      <input type ="text" name="name" id="name">
+    </p>
+    <p>
+      <label for="email">email</label>
+      <input type="text" name="email" id="email"> 
+    </p>
+    <button id="submit">Submit</button>
+  </form>
+
   <script>
+
+    document.getElementById(`submit`).addEventListener(`click`, event => {
+      event.preventDefault()
+      console.log(document.getElementById('name').value)
+      console.log(document.getElementById('email').value)
+    })
 
     // Hoisting - Browser reads every js function written before running it, moves function to top and defines them. Considered weak developing. Correct developing below const greeting = function.
     
@@ -143,10 +163,22 @@
     // console.log(document.getElementById('heading').textContent)
     // document.getElementById('heading').textContent = 'Goodbye World'
 
-    document.getElementById('myBtn').addEventListener('click', () => {
-      const randNum = Math.floor(Math.() * 100)
-      document.getElementById('random').textContent = randNum
-    })
+    // document.getElementById('myBtn').addEventListener('click', () => {
+    //   const randNum = Math.floor(Math.() * 100)
+    //   document.getElementById('random').textContent = randNum
+    // })
+
+    // let count = 0;
+    // let btn = document.getElementById("myBtn");
+    // let disp = document.getElementById("display");
+
+    // btn.onclick = function() {
+    //   count++
+    //   count--
+    //   disp.innerHTML = count;
+    // }
+
+
 
   </script>  
 </body>
