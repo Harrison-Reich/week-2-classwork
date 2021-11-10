@@ -7,6 +7,71 @@
   <title>Document</title>
 </head>
 <body>
-  
+
+  <script>
+    // Hoisting - Browser reads every js function written before running it, moves function to top and defines them. Considered weak developing. Correct developing below const greeting = function.
+
+    // greeting()
+
+    // function greeting() {
+    //   const message = 'Hello and Good Morning'
+    //   console.log(message)
+    // }
+
+
+    // const greeting = function (name) {
+    //   console.log(`Hello ${name} and Good Morning!`)
+    // }
+
+    // greeting('John Doe')
+    // greeting ('Jane Doe')
+
+
+      // const greeting = (person1, person2) => console.log(`Hello ${person1} and Good Morning ${person2}!`)
+      
+      // greeting('John Doe', 'Jane Doe')
+      // greeting ('Jane Doe')
+
+    // function add() {
+    //   const sum = (4)
+    //   console.log(sum)
+    // }
+    // add(2 + 2)
+
+
+    const add = (num1, num2) => console.log(num1 + num2)
+      add (2, 2)
+      
+    
+    // function sub() {
+    //   const subtract = (2)
+    //   console.log(subtract)
+    // }
+    // sub(4 - 2)
+
+    const subtract = (num1, num2) => console.log(num1 - num2)
+      subtract (4, 2)
+
+
+    // function dividend () {
+    //   const quotient = (4)
+    //   console.log(quotient)
+    // }
+    // dividend (8 / 2)
+
+    const divide = (num1, num2) => console.log(num1 / num2)
+      divide (8, 2)
+
+
+    // function multiplicand () {
+    //   const product = (16)
+    //   console.log(product)
+    // }
+    // multiplicand (4 * 4)
+
+    const multiply = (num1, num2) => console.log(num1 * num2)
+      multiply (4, 4)
+
+  </script>  
 </body>
 </html>
