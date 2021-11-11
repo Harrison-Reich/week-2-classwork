@@ -7,9 +7,9 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- <h1 id="display">0</h1> -->
+  <h1 id="display">0</h1>
   <!-- <div id="myDiv"></div> -->
-  <!-- <button id="myBtn">Click Me</button> -->
+  <button id="myBtn">Click Me</button>
   <!-- <p>Button Clicked <span id="display">0</span></p> -->
 
   <form>
@@ -61,7 +61,6 @@
     //       }
     //       add(2 + 2)
           
-          
     //       const add = (num1, num2) => console.log(num1 + num2)
     //         add (2, 2)
           
@@ -98,30 +97,30 @@
                 
                 
                 
-    //   const user = {
-    //       name: 'Harrison Reich',
-    //       age: 23,
-    //       email: 'harry@gmail.com',
-    //       posts: [
-    //           {
-    //             title: 'My First Post',
-    //             body: 'This is my first post',
-    //       }
-    //     ],
-    //       pet: {
-    //         name:'Bowser',
-    //         breed:'Shitzu'
-    //     },
-    //       greeting() {
-    //       console.log('Hello there!')
-    //     }
-    //   }
+      // const user = {
+      //     name: 'Harrison Reich',
+      //     age: 23,
+      //     email: 'harry@gmail.com',
+      //     posts: [
+      //         {
+      //           title: 'My First Post',
+      //           body: 'This is my first post',
+      //     }
+      //   ],
+      //     pet: {
+      //       name:'Bowser',
+      //       breed:'Shitzu'
+      //   },
+      //     greeting() {
+      //     console.log('Hello there!')
+      //   }
+      // }
                           
-    //     console.log(user.email)
-    //     console.log(user.name)
-    //     console.log(user.pet.name)
-    //     console.log(user.posts, [1].title)
-    //     user.greeting()
+      //   console.log(user.email)
+      //   console.log(user.name)
+      //   console.log(user.pet.name)
+      //   console.log(user.posts, [0].title)
+      //   user.greeting()
                           
     //   const movie = {
     //       name: 'Dune',
@@ -160,23 +159,23 @@
     //       summary: `A mythic and emotionally charged hero's journey, "Dune" tells the story of Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, who must travel to the most dangerous planet in the universe to ensure the future of his family and his people.As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential- only those who can conquer their fear will survive.—Warner Bros.`
     //   }
     //  console.log(movie) 
-    // console.log(document.getElementById('heading').textContent)
-    // document.getElementById('heading').textContent = 'Goodbye World'
+    console.log(document.getElementById('heading').textContent)
+    document.getElementById('heading').textContent = 'Goodbye World'
 
-    // document.getElementById('myBtn').addEventListener('click', () => {
-    //   const randNum = Math.floor(Math.() * 100)
-    //   document.getElementById('random').textContent = randNum
-    // })
+    document.getElementById('myBtn').addEventListener('click', () => {
+      const randNum = Math.floor(Math.random() * 100)
+      document.getElementById('random').textContent = randNum
+    })
 
-    // let count = 0;
-    // let btn = document.getElementById("myBtn");
-    // let disp = document.getElementById("display");
+    let count = 0;
+    let btn = document.getElementById("myBtn");
+    let disp = document.getElementById("display");
 
-    // btn.onclick = function() {
-    //   count++
-    //   count--
-    //   disp.innerHTML = count;
-    // }
+    btn.onclick = function() {
+      count++
+      count--
+      disp.innerHTML = count;
+    }
 
 
 
